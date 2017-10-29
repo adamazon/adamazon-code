@@ -1,6 +1,6 @@
 # Influencing factors of product's reviews
 
-# Abstract
+## Abstract
 Product's review are often in the middle of polemical situations, because of the
 high subjectivity it could bring. The review can also be faked, exageratated or
 influenced by others (see the [social proof](https://en.wikipedia.org/wiki/Social_proof)).
@@ -12,14 +12,23 @@ the objective will be to find out if an evaluation's range can be predicted or
 not, and with wich level of effectiveness. The Amazon's review dataset will be
 used for the analysis.
 
-# Research questions
-A list of research questions you would like to address during the project.
+## Research questions
+- Which factors can influence an online product review?
+- Can a review's score be predicted based on product metadata and reviews?
+- Can subjectivity of an evaluation be outlined from other's evaluations and
+  product category?
+- Can the next review's score of an evaluator for a specific product be
+  anticipated, based on its review history and the product itself?
 
-# Dataset
+## Dataset
 List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show us you've read the docs and some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
 
-# A list of internal milestones up until project milestone 2
+- Amazon's review: http://jmcauley.ucsd.edu/data/amazon/
+  - Using the clusted, we will extract the most evaluated products and some of the
+    most productive evaluators to provide our analysis.
+
+## A list of internal milestones up until project milestone 2
 Add here a sketch of your planning for the next project milestone.
 
-# Questions for TAa
+## Questions for TAa
 Add here some questions you have for us, in general or project-specific.
