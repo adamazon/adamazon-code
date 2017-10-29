@@ -1,5 +1,7 @@
 # Influencing factors of product's reviews
 
+**Group:** Victor Le, Quentin de Longraye, Karttikeya Mangalam
+
 ## Abstract
 Product's review are often in the middle of polemical situations, because of the
 high subjectivity it could bring. The review can also be faked, exageratated or
