@@ -34,4 +34,4 @@ the objective is to investigate the reliability of an evaluation and to what ext
 We will in a first part focus on data extraction, to be able to visualize the data early (using basic plots). 4 main resources will be extracted: products, reviews, reviewers and categories. This will allow us to learn how to work with Spark. Then, we will start working on data matching, descriptive data analysis and visualization of matched data. It will be useful to understand how data is distributed and visualize disparity based on several parameters including: time, reviewers, categories, products, … and make relevant data groupments. Finally, we will search for insight based on the descriptive analysis to prepare the next milestone, by searching for correlations based on the raw data, and analyse how data will have to be analysed and transformed to get responses to our research questions.
 
 ## Questions for TAa
-Add here some questions you have for us, in general or project-specific.
+No question so far.
