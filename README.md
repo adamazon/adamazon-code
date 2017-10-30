@@ -7,7 +7,7 @@ Product's review are often in the middle of polemical situations, because of the
 high subjectivity it could bring. The review can also be faked, exaggerated or unknowingly
 influenced by others' opinion (see the [social proof](https://en.wikipedia.org/wiki/Social_proof)).
 The purpose of this project is to understand the factors that influence online
-reviews of products and to what degree. Exmaples of such factors are rating history for a single product, rating
+reviews of products and to what degree. Examples of such factors are rating history for a single product, rating
 history of an individual or metadata about the product itself, extracted
 information about product's picture, such as its color and others. Based on these factors,
 the objective is to investigate the reliability of an evaluation and to what extent can the evaluation's range be predicted.
@@ -21,8 +21,6 @@ the objective is to investigate the reliability of an evaluation and to what ext
   anticipated, based on the product and its review history?
 
 ## Dataset
-List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show us you've read the docs and some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
-
 - Amazon's review: http://jmcauley.ucsd.edu/data/amazon/
   - Using the cluster, we will extract the most evaluated products and some of the
     most productive evaluators to provide our analysis.
@@ -31,7 +29,7 @@ List the dataset(s) you want to use, and some ideas on how do you expect to get,
   - We would likely be using simple *Machine Learning* algorithms for finding patterns and checking the prediction-ability of the final score given the data.
 
 ## A list of internal milestones up until project milestone 2
-![Gantt diagram](https://github.com/Coac/epfl-ada/blob/master/Project/gantt.png)
+![Gantt diagram](https://github.com/Coac/epfl-ada/raw/master/Project/gantt.png)
 
 We will in a first part focus on data extraction, to be able to visualize the data early (using basic plots). 4 main resources will be extracted: products, reviews, reviewers and categories. This will allow us to learn how to work with Spark. Then, we will start working on data matching, descriptive data analysis and visualization of matched data. It will be useful to understand how data is distributed and visualize disparity based on several parameters including: time, reviewers, categories, products, … and make relevant data groupments. Finally, we will search for insight based on the descriptive analysis to prepare the next milestone, by searching for correlations based on the raw data, and analyse how data will have to be analysed and transformed to get responses to our research questions.
 
