@@ -1,6 +1,29 @@
 # Investigating factors behind product reviews
 
-**Group:** Victor Le, Quentin de Longraye, Karttikeya Mangalam
+## Milestone 2 
+
+**Group:**  Karttikeya Mangalam, Victor Le, Quentin de Longraye
+
+### Goals:
+
+- We aim to build a regression model based on the review scores to automatically assign a predicted "helpfulness" rating to each comment. Moreover, we also aim to merge this rating with the actual human assigned value in a real system to re-arrange reviews in a more useful way hopefully.
+- Using the above model or otherwise, we also aim to investigate the use of short summary of review and the role it plays along with the actual long review in determining the usefulness. For ex: A short comment like - *Requires in game purchases* can be pretty helpful with no actual long review and it would be interesting to see if we can quantify that. 
+
+**Motivation** : 
+The reason human scores themselves are not always very reliables is because even though the rating is supposed to be a measure of "helpfulness", people can still vote up a comment if it's not helpful but says something funny/creative/interesting. While, this sort of behavior is common and not looked down upon, it still deafeats the basic purpose of scoring reviews. <br>
+Our proposed system can curb such behavior by assigning a low score to the comment. 
+
+**Proposed Approach** : 
+- We already wet our hands with TF-IDF clusteing to explore the review data on helpfulness. As expected, TF-IDF is unstable for such short document lengths (@Quentin : Can you comment on the document length distribution here? mean and std should be good). We propose t such more sophiticated word embeddings such as - [Star Space](https://github.com/facebookresearch/StarSpace) to capture text
+- Once the embeddings are a god representation of text, we propose to cluster/regress over thr=e proposed features on an identified similar group of products in the same category as follows.
+- The dataset has product metadata such as sub categories etc. We propose to induce a graph over the products with Gaussian distance as a metric for similarity and use a off the shelf classifier such as K- Nearest neighbour to identify a cluster that is sufficiently large in terms of number of product reviews starting from the most reviewed products. ( *PlayStation 500 GB* in *Video Games* etc.)
+
+**Till Now : Exploratory and Descriptive Analysis*
+
+
+
+
+## Milestone 1
 
 ## Abstract
 Product's review are often polemical situations because of the
