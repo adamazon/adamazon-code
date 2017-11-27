@@ -1,27 +1,25 @@
 # Investigating factors behind product reviews
 
-## Milestone 2 
+**Group:**  Victor Le, Quentin de Longraye, Karttikeya Mangalam
 
-**Group:**  Karttikeya Mangalam, Victor Le, Quentin de Longraye
+## Milestone 2
 
-### Goals:
+### Goals
 
 - We aim to build a regression model based on the review scores to automatically assign a predicted "helpfulness" rating to each comment. Moreover, we also aim to merge this rating with the actual human assigned value in a real system to re-arrange reviews in a more useful way hopefully.
-- Using the above model or otherwise, we also aim to investigate the use of short summary of review and the role it plays along with the actual long review in determining the usefulness. For ex: A short comment like - *Requires in game purchases* can be pretty helpful with no actual long review and it would be interesting to see if we can quantify that. 
+- Using the above model or otherwise, we also aim to investigate the use of short summary of review and the role it plays along with the actual long review in determining the usefulness. For example: A short comment like *"Requires in game purchases"* can be pretty helpful with no actual long review and it would be interesting to see if we can quantify that.
 
-**Motivation** : 
-The reason human scores themselves are not always very reliables is because even though the rating is supposed to be a measure of "helpfulness", people can still vote up a comment if it's not helpful but says something funny/creative/interesting. While, this sort of behavior is common and not looked down upon, it still deafeats the basic purpose of scoring reviews. <br>
-Our proposed system can curb such behavior by assigning a low score to the comment. 
+### Motivation
 
-**Proposed Approach** : 
-- We already wet our hands with TF-IDF clusteing to explore the review data on helpfulness. As expected, TF-IDF is unstable for such short document lengths (@Quentin : Can you comment on the document length distribution here? mean and std should be good). We propose t such more sophiticated word embeddings such as - [Star Space](https://github.com/facebookresearch/StarSpace) to capture text
-- Once the embeddings are a god representation of text, we propose to cluster/regress over thr=e proposed features on an identified similar group of products in the same category as follows.
-- The dataset has product metadata such as sub categories etc. We propose to induce a graph over the products with Gaussian distance as a metric for similarity and use a off the shelf classifier such as K- Nearest neighbour to identify a cluster that is sufficiently large in terms of number of product reviews starting from the most reviewed products. ( *PlayStation 500 GB* in *Video Games* etc.)
+The reason human scores themselves are not always very reliable is because even though the rating is supposed to be a measure of "helpfulness", people can still vote up a comment if it's not helpful but says something funny/creative/interesting. While, this sort of behavior is common and not looked down upon, it still defeat the basic purpose of scoring reviews.
 
-**Till Now : Exploratory and Descriptive Analysis*
+Our proposed system can curb such behavior by assigning a low score to the comment.
 
+### Proposed Approach
 
-
+- We already wet our hands with TF-IDF clustering to explore the review data on helpfulness. As expected, TF-IDF is unstable for such short document lengths (50% of reviews have less than 576 words, 75% have less than 1373 words). We propose more sophisticated word embeddings such as [Star Space](https://github.com/facebookresearch/StarSpace) to capture text
+- Once the embeddings are a good representation of text, we propose to cluster/regress over three proposed features on an identified similar group of products in the same category as follows
+- The dataset has product metadata such as subcategories etc. We propose to induce a graph over the products with Gaussian distance as a metric for similarity and use a off the shelf classifier such as K-Nearest neighbor to identify a cluster that is sufficiently large in terms of number of product reviews starting from the most reviewed products (*PlayStation 500 GB* in *Video Games* etc.)
 
 ## Milestone 1
 
@@ -36,7 +34,7 @@ information about product's picture, such as its color and others. Based on thes
 the objective is to investigate the reliability of an evaluation and to what extent can the evaluation's range be predicted.
 
 ## Research questions
-- Which factors can influence an online product review? Both qualitatively and a rough quantative estimate. 
+- Which factors can influence an online product review? Both qualitatively and a rough quantative estimate.
 - Can a review's score be predicted based on product metadata and reviews?
 - Can subjectivity of an evaluation be outlined from other's evaluations and
   product category?
