@@ -4,6 +4,44 @@
 
 ## Milestone 2
 
+### Choices
+
+After working on the descriptive analysis, we decided to focus only on the
+*Video Games* category and dropped the idea of giving an overall analysis.
+It will ease the analysis as studied mechanisms of review may be completely
+different from one category to another.
+
+We found that detailed reviews are globally done by a smaller proportion of the
+reviewers. We may consequently try to focus our analysis on a subpart of the
+reviewers (based on an average between helpful rate, number of reviews and reviews
+length). This is yet to be done.
+
+### Goals
+
+From this subpart of the population, we will try to predict reviews grade based on three main factors:
+
+- general features such has "helpfulness" of a review and other metrics, such as
+  review length, ... We have found very little correlations already and it's
+  likely that this idea is a wrong path.
+- review text content, to see if we can predict a final rank from used words,
+this may be done:
+  - in the point of view of a specific reviewer and using his review history
+  - using all the reviews without focusing on any one
+- review history of a product, too see if past grades can influence upcoming grades
+and see if there is influences between users or a will to counterbalance the
+current grade (this may be mitigated using the "helpfulness" rate of the review)
+
+### Proposed Approach
+
+We already wet our hands with TF-IDF clustering to explore the review data on helpfulness. As expected, TF-IDF is unstable for such short document lengths (50% of reviews have less than 576 words, 75% have less than 1373 words). We propose more sophisticated word embeddings such as [Star Space](https://github.com/facebookresearch/StarSpace) to capture text.
+
+We will improve our correlations analysis for general features by training a machine
+learning algorithms to confirm that we can't easily predict reviews rank using only
+these features.
+
+We will try to find, based on reviews history over time, if we can predict next
+reviews grades for some of the most rated products.
+
 ### Goals
 
 - We aim to build a regression model based on the review scores to automatically assign a predicted "helpfulness" rating to each comment. Moreover, we also aim to merge this rating with the actual human assigned value in a real system to re-arrange reviews in a more useful way hopefully.
