@@ -11,19 +11,24 @@ After working on the descriptive analysis, we decided to focus only on the
 It eases the analysis as studied mechanisms of review may be completely
 different from one category to another.
 
-### Observations: 
+### Motivation
+
+The reason human scores themselves are not always very reliable is because even though the rating is supposed to be a measure of "helpfulness", people can still vote up a comment if it's not helpful but says something funny/creative/interesting. While, this sort of behavior is common and not looked down upon, it still defeat the basic purpose of scoring reviews.
+
+### Observations
+
 - We found that detailed reviews are globally done by a smaller proportion of the
 reviewers. 
-- Number of Reviews per reviewer (highest to lowest) follows a power law.
-- Even for the reviewers with the most number of the reviews, the distribution of helpfulness for their reviews are the same as global distribution. 
+- Number of reviews per reviewer (highest to lowest) follows a power law.
+- Even for the reviewers with the most number of the reviews, the distribution of helpfulness and grades for their reviews are the same as global distribution. 
 - We also observed around 0.3 correlation between the review length and the helpfulness rate.
 - Also, the product reviews are very tail heavy. 75% of the total product grades are 4 or over that.
+- We look at the number of persons with reviews more than 200 which turns out to aorund 10 people only.
 
+### Failed attempts
 
-### Failed attempts:
-
-- We tried looking at word occurences (based on review content) but didn't find any relevant insight (Still looking further).
-- We also tried to find an example of Social proof by observing the time-series data for product grade. 
+- We tried looking at word occurences (based on review content) but didn't find any relevant insight (still looking further).
+- We also tried to find an example of Social Proof by observing the time-series data for product grade without success.
 - We also looked for interesting correlation between product meta-data and reviews but didn't found any. 
 
 ### Proposed Approach
@@ -45,21 +50,6 @@ reviews grades for some of the most rated products.
   - Or, we can fix a subset of products and look at the various reviews on the subset.
 - Using the above model or otherwise, we also aim to investigate the use of short summary of review and the role it plays along with the actual long review in determining the usefulness. For example: A short comment like *"Requires in game purchases"* can be pretty helpful with no actual long review and it would be interesting to see if we can quantify that.
 - We would also incorporate general features such as "helpfulness" rate or the review text length to see their predictive capability.
-
-## Exploring Data to set viable goals:
-
-- We look at the number of persons with reviews more than 200 which turns out to aorund 10 people only, 
-### Motivation
-
-The reason human scores themselves are not always very reliable is because even though the rating is supposed to be a measure of "helpfulness", people can still vote up a comment if it's not helpful but says something funny/creative/interesting. While, this sort of behavior is common and not looked down upon, it still defeat the basic purpose of scoring reviews.
-
-Our proposed system can curb such behavior by assigning a low score to the comment.
-
-### Proposed Approach
-
-- We already wet our hands with TF-IDF clustering to explore the review data on helpfulness. As expected, TF-IDF is unstable for such short document lengths (50% of reviews have less than 576 words, 75% have less than 1373 words). We propose more sophisticated word embeddings such as [Star Space](https://github.com/facebookresearch/StarSpace) to capture text
-- Once the embeddings are a good representation of text, we propose to cluster/regress over three proposed features on an identified similar group of products in the same category as follows
-- The dataset has product metadata such as subcategories etc. We propose to induce a graph over the products with Gaussian distance as a metric for similarity and use a off the shelf classifier such as K-Nearest neighbor to identify a cluster that is sufficiently large in terms of number of product reviews starting from the most reviewed products (*PlayStation 500 GB* in *Video Games* etc.)
 
 ## Milestone 1
 
