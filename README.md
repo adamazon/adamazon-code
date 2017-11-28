@@ -33,7 +33,7 @@ reviewers.
 
 ### Proposed Approach
 
-We already wet our hands with TF-IDF clustering to explore the review data on helpfulness. As expected, TF-IDF is unstable for such short document lengths (50% of reviews have less than 576 words, 75% have less than 1373 words). We propose a more sophisticated word embeddings such as [Star Space](https://github.com/facebookresearch/StarSpace) to capture text.
+We already wet our hands with TF-IDF clustering to explore the review data on helpfulness. As expected, TF-IDF is unstable for such short document lengths (50% of reviews have less than 576 words, 75% have less than 1373 words). We propose more sophisticated word embeddings such as [Star Space](https://github.com/facebookresearch/StarSpace) to capture text.
 
 We will improve our correlations analysis for general features by training a machine
 learning algorithm to confirm that we can't easily predict reviews rank using only
@@ -54,6 +54,7 @@ reviews grades for some of the most rated products.
 ## Milestone 1
 
 ## Abstract
+
 Product's review are often polemical situations because of the
 high level of subjectivity involved. Reviews can also be exaggerated even faked or unknowingly
 influenced by others' opinion (see the [social proof](https://en.wikipedia.org/wiki/Social_proof)).
@@ -64,6 +65,7 @@ information about product's picture, such as its color and others. Based on thes
 the objective is to investigate the reliability of an evaluation and to what extent can the evaluation's range be predicted.
 
 ## Research questions
+
 - Which factors can influence an online product review? Both qualitatively and a rough quantative estimate.
 - Can a review's score be predicted based on product metadata and reviews?
 - Can subjectivity of an evaluation be outlined from other's evaluations and
@@ -72,6 +74,7 @@ the objective is to investigate the reliability of an evaluation and to what ext
   anticipated, based on the product and its review history?
 
 ## Dataset
+
 - Amazon's review: http://jmcauley.ucsd.edu/data/amazon/
   - Using the cluster, we will extract the most evaluated products and some of the
     most productive evaluators to provide our analysis.
