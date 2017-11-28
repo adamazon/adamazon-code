@@ -4,32 +4,27 @@
 
 ## Milestone 2
 
-### Choices
+### Till now
 
 After working on the descriptive analysis, we decided to focus only on the
-*Video Games* category and dropped the idea of giving an overall analysis.
-It will ease the analysis as studied mechanisms of review may be completely
+*Video Games* category and extend to others if time permits.
+It eases the analysis as studied mechanisms of review may be completely
 different from one category to another.
 
-We found that detailed reviews are globally done by a smaller proportion of the
-reviewers. We may consequently try to focus our analysis on a subpart of the
-reviewers (based on an average between helpful rate, number of reviews and reviews
-length). This is yet to be done.
+### Observations: 
+- We found that detailed reviews are globally done by a smaller proportion of the
+reviewers. 
+- Number of Reviews per reviewer (highest to lowest) follows a power law.
+- Even for the reviewers with the most number of the reviews, the distribution of helpfulness for their reviews are the same as global distribution. 
+- We also observed around 0.3 correlation between the review length and the helpfulness rate.
+- Also, the product reviews are very tail heavy. 75% of the total product grades are 4 or over that.
 
-### Goals
 
-From this subpart of the population, we will try to predict reviews grade based on three main factors:
+### Failed attempts:
 
-- general features such has "helpfulness" of a review and other metrics, such as
-  review length, ... We have found very little correlations already and it's
-  likely that this idea is a wrong path.
-- review text content, to see if we can predict a final rank from used words,
-this may be done:
-  - in the point of view of a specific reviewer and using his review history
-  - using all the reviews without focusing on any one
-- review history of a product, too see if past grades can influence upcoming grades
-and see if there is influences between users or a will to counterbalance the
-current grade (this may be mitigated using the "helpfulness" rate of the review)
+- We tried looking at word occurences (based on review content) but didn't find any relevant insight (Still looking further).
+- We also tried to find an example of Social proof by observing the time-series data for product grade. 
+- We also looked for interesting correlation between product meta-data and reviews but didn't found any. 
 
 ### Proposed Approach
 
@@ -45,7 +40,11 @@ reviews grades for some of the most rated products.
 ### Goals
 
 - We aim to build a regression model based on the review scores to automatically assign a predicted "helpfulness" rating to each comment. Moreover, we also aim to merge this rating with the actual human assigned value in a real system to re-arrange reviews in a more useful way hopefully.
+- There are two possible paths to this: 
+  - We can fix a reviewer and look at it's reviews over various products.
+  - Or, we can fix a subset of products and look at the various reviews on the subset.
 - Using the above model or otherwise, we also aim to investigate the use of short summary of review and the role it plays along with the actual long review in determining the usefulness. For example: A short comment like *"Requires in game purchases"* can be pretty helpful with no actual long review and it would be interesting to see if we can quantify that.
+- We would also incorporate general features such as "helpfulness" rate or the review text length to see their predictive capability.
 
 ## Exploring Data to set viable goals:
 
