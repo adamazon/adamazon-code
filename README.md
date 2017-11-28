@@ -9,6 +9,9 @@
 - We aim to build a regression model based on the review scores to automatically assign a predicted "helpfulness" rating to each comment. Moreover, we also aim to merge this rating with the actual human assigned value in a real system to re-arrange reviews in a more useful way hopefully.
 - Using the above model or otherwise, we also aim to investigate the use of short summary of review and the role it plays along with the actual long review in determining the usefulness. For example: A short comment like *"Requires in game purchases"* can be pretty helpful with no actual long review and it would be interesting to see if we can quantify that.
 
+## Exploring Data to set viable goals:
+
+- We look at the number of persons with reviews more than 200 which turns out to aorund 10 people only, 
 ### Motivation
 
 The reason human scores themselves are not always very reliable is because even though the rating is supposed to be a measure of "helpfulness", people can still vote up a comment if it's not helpful but says something funny/creative/interesting. While, this sort of behavior is common and not looked down upon, it still defeat the basic purpose of scoring reviews.
