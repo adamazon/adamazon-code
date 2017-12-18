@@ -2,6 +2,10 @@
 
 **Group:**  Victor Le, Quentin de Longraye, Karttikeya Mangalam
 
+> Read the data story here: https://adamazon.github.io
+
+The code of the visualization page is in another repository: https://github.com/adamazon/adamazon
+
 ## Milestone 3
 
 Responsabilities for the milestone:
