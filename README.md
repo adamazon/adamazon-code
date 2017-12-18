@@ -1,4 +1,4 @@
-# Investigating factors behind product reviews
+# Adamazon: Investigating factors behind product reviews
 
 **Group:**  Victor Le, Quentin de Longraye, Karttikeya Mangalam
 
