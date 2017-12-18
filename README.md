@@ -2,6 +2,14 @@
 
 **Group:**  Victor Le, Quentin de Longraye, Karttikeya Mangalam
 
+## Milestone 3
+
+Responsabilities for the milestone:
+
+- **Victor Le**: Preliminary data analysis, text analysis (nltk preprocessor, TFIDF, Word2Vec), similar products (nearest neighbours), plot charts, explanations, poster
+- **Quentin de Longraye**: Data import and cleaning, preliminary data analysis, explanations, "dumb" neural network classifier, data visualization (data story), poster
+- **Karttikeya Mangalam**: Problem formulation, Starspace
+
 ## Milestone 2
 
 ### Till now
