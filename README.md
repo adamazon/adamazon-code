@@ -2,9 +2,11 @@
 
 **Group:**  Victor Le, Quentin de Longraye, Karttikeya Mangalam
 
-> Read the data story here: https://adamazon.github.io
+> Read the notebook here: https://github.com/Coac/epfl-ada/blob/master/Project/Project.ipynb
 
 The code of the visualization page is in another repository: https://github.com/adamazon/adamazon
+
+> Read the data story here: https://adamazon.github.io
 
 ## Milestone 3
 
