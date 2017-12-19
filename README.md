@@ -10,11 +10,30 @@ The code of the visualization page is in another repository: https://github.com/
 
 ## Milestone 3
 Our aim for the project is to investigate the factor affecting the product reviews in e-retail domain through analysis of the Amazon Review Dataset.
-Responsabilities for the milestone:
+
+The procedure:
+**Data Set Exploration**:
+- We start with introducing and describing the dataset
+- We establish the power law nature od the distribution of reviews and other statistics.
+- We observe the distribution of review/helpful notes and strategize the exploitation phase.
+
+**Datset Exploitation** : 
+- We start with the a review of the correlations and develop heuristics for the machine learning pipeline.
+- We start with a dumb neural network to measure the relation between helpful rating and the product rating by the review.
+- Perform feature ablation experiments to choose the best possible subset (including the text features from next part).
+
+**Text Analysis** :
+- We perform the standard NLP pipeline (tokenization, Embedding, classification) and then report the accuracies and allow a live demonstratation of the model. 
+
+***A note on starspace embeddings***:
+
+Initially, we had planned to use star space embeddings from the [Facebook repository](https://github.com/facebookresearch/StarSpace) but it turned out to be extremely sensitive to hyperparameters and takes very long for a single model to run(~1.5 hours on Titan X GPU). Moreover, the word2vec embeddings with the handcrafted features seemed to perform superior. Hence, in the final model, this component is not used.
+
+Responsibilities for the milestone:
 
 - **Victor Le**: Preliminary data analysis, text analysis (nltk preprocessor, TFIDF, Word2Vec), similar products (nearest neighbours), plot charts, explanations, poster
 - **Quentin de Longraye**: Data import and cleaning, preliminary data analysis, explanations, "dumb" neural network classifier, data visualization (data story), poster
-- **Karttikeya Mangalam**: Problem formulation, Starspace
+- **Karttikeya Mangalam**: Exploitation strategies, preliminary data analysis, data story content, Starspace embeddings, wordvec visualization (notebook), poster
 
 ## Milestone 2
 
