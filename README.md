@@ -38,7 +38,7 @@ Responsibilities for the milestone:
 
 ***A note on starspace embeddings (Karttikeya Mangalam)***:
 
-Initially, we had planned to use star space embeddings from the [Facebook repository](https://github.com/facebookresearch/StarSpace) but it turned out to be extremely sensitive to hyperparameters and takes very long for a single model to run (~1.5 hours on Titan X GPU). In the final model, this component is not used.
+Initially, we had planned to use star space embeddings from the [Facebook repository](https://github.com/facebookresearch/StarSpace) but it turned out to be extremely sensitive to hyperparameters and takes very long for a single model to run (~1.5 hours on Titan X GPU). In the final model, this component is not used. See the files `starspace.py` and `starspace_embeddings.py`.
 
 ## Milestone 2
 
