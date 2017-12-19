@@ -34,7 +34,7 @@ Responsibilities for the milestone:
 
 - **Victor Le**: Preliminary data analysis, text analysis (nltk preprocessor, TFIDF, Word2Vec), similar products (nearest neighbours), plot charts, explanations, poster
 - **Quentin de Longraye**: Data import and cleaning, preliminary data analysis, explanations, "dumb" neural network classifier, data visualization (data story), poster
-- **Karttikeya Mangalam**: Exploitation strategies, Starspace embeddings, poster
+- **Karttikeya Mangalam**: Exploitation strategies, Starspace embeddings, milestone report, word2vec visualization (notebook) poster
 
 **A note on starspace embeddings (Karttikeya Mangalam)**:
 
