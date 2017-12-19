@@ -1,6 +1,6 @@
 # Adamazon: Investigating factors behind product reviews
 
-**Group:**  Victor Le, Quentin de Longraye, Karttikeya Mangalam
+**Group:**  Le Victor, de Longraye Quentin, Mangalam Karttikeya
 
 > Read the notebook here: https://github.com/Coac/epfl-ada/blob/master/Project/Project.ipynb
 
@@ -9,7 +9,7 @@ The code of the visualization page is in another repository: https://github.com/
 > Read the data story here: https://adamazon.github.io
 
 ## Milestone 3
-
+Our aim for the project is to investigate the factor affecting the product reviews in e-retail domain through analysis of the Amazon Review Dataset.
 Responsabilities for the milestone:
 
 - **Victor Le**: Preliminary data analysis, text analysis (nltk preprocessor, TFIDF, Word2Vec), similar products (nearest neighbours), plot charts, explanations, poster
