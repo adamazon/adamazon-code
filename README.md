@@ -12,6 +12,7 @@ The code of the visualization page is in another repository: https://github.com/
 Our aim for the project is to investigate the factor affecting the product reviews in e-retail domain through analysis of the Amazon Review Dataset.
 
 The procedure:
+
 **Data Set Exploration**:
 - We start with introducing and describing the dataset
 - We establish the power law nature od the distribution of reviews and other statistics.
