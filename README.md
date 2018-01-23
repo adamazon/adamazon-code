@@ -8,6 +8,10 @@ The code of the visualization page is in another repository: https://github.com/
 
 > Read the data story here: https://adamazon.github.io
 
+## Poster
+
+![poster](docs/poster.jpg)
+
 ## Milestone 3
 
 Our aim for the project is to investigate the factor affecting the product reviews in e-retail domain through analysis of the Amazon Review Dataset.
@@ -20,7 +24,7 @@ The procedure:
 - We establish the power law nature of the distribution of reviews and other statistics.
 - We observe the distribution of review/helpful notes and strategize the exploitation phase.
 
-**Datset Exploitation** : 
+**Datset Exploitation** :
 
 - We start with a review of the correlations and develop heuristics for the machine learning pipeline.
 - We start with a dumb neural network to measure the explore possible features.
@@ -28,7 +32,7 @@ The procedure:
 
 **Text Analysis** :
 
-- We perform the standard NLP pipeline (tokenization, Embedding, classification) and then report the accuracies and allow a live demonstration of the model. 
+- We perform the standard NLP pipeline (tokenization, Embedding, classification) and then report the accuracies and allow a live demonstration of the model.
 
 Achievements for the milestone:
 
@@ -56,9 +60,9 @@ The reason human scores themselves are not always very reliable is because even 
 ### Observations
 
 - We found that detailed reviews are globally done by a smaller proportion of the
-reviewers. 
+reviewers.
 - Number of reviews per reviewer (highest to lowest) follows a power law.
-- Even for the reviewers with the most number of the reviews, the distribution of helpfulness and grades for their reviews are the same as global distribution. 
+- Even for the reviewers with the most number of the reviews, the distribution of helpfulness and grades for their reviews are the same as global distribution.
 - We also observed around 0.3 correlation between the review length and the helpfulness rate.
 - Also, the product reviews are very tail heavy. 75% of the total product grades are 4 or over that.
 - We look at the number of persons with reviews more than 200 which turns out to around 10 people only.
@@ -67,7 +71,7 @@ reviewers.
 
 - We tried looking at word occurences (based on review content) but didn't find any relevant insight (still looking further).
 - We also tried to find an example of Social Proof by observing the time-series data for product grade without success.
-- We also looked for interesting correlations between product meta-data and reviews but didn't found any. 
+- We also looked for interesting correlations between product meta-data and reviews but didn't found any.
 
 ### Proposed Approach
 
@@ -83,7 +87,7 @@ reviews grades for some of the most rated products.
 ### Goals
 
 - We aim to build a regression model based on the review scores to automatically assign a predicted "helpfulness" rating to each comment. Moreover, we also aim to merge this rating with the actual human assigned value in a real system to re-arrange reviews in a more useful way hopefully.
-- There are two possible paths to this: 
+- There are two possible paths to this:
   - We can fix a reviewer and look at it's reviews over various products.
   - Or, we can fix a subset of products and look at the various reviews on the subset.
 - Using the above model or otherwise, we also aim to investigate the use of short summary of review and the role it plays along with the actual long review in determining the usefulness. For example: A short comment like *"Requires in game purchases"* can be pretty helpful with no actual long review and it would be interesting to see if we can quantify that.
