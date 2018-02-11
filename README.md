@@ -1,6 +1,6 @@
 # Adamazon: Investigating factors behind product reviews
 
-**Group:**  Le Victor, de Longraye Quentin, Mangalam Karttikeya
+**Group:**  Le Victor, de Longraye Quentin
 
 > Read the notebook here: https://github.com/Coac/epfl-ada/blob/master/Project/Project.ipynb
 
@@ -38,11 +38,6 @@ Achievements for the milestone:
 
 - **Victor Le**: Preliminary data analysis, text analysis (nltk preprocessor, TFIDF, Word2Vec), similar products (nearest neighbours), plot charts, explanations, poster
 - **Quentin de Longraye**: Data import and cleaning, preliminary data analysis, explanations, "dumb" neural network classifier, data visualization (data story), poster
-- **Karttikeya Mangalam**: Exploitation strategies, Starspace embeddings, README redaction, poster
-
-**A note on starspace embeddings (Karttikeya Mangalam)**:
-
-Initially, we had planned to use star space embeddings from the [Facebook repository](https://github.com/facebookresearch/StarSpace) but it turned out to be extremely sensitive to hyperparameters and takes very long for a single model to run (~1.5 hours on Titan X GPU). In the final model, this component is not used. See the files `starspace.py` and `starspace_embeddings.py`.
 
 ## Milestone 2
 
